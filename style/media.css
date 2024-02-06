@@ -1,0 +1,148 @@
+
+  @media only screen and (max-width:1200px){ 
+    
+  }
+  
+  @media only screen and (max-width:992px){
+     header nav ul{
+      display: none;
+    }
+    nav img{
+      display: none;
+    }
+    .menuBtn{
+      display: flex;
+      z-index: 100;
+    }
+   
+     ul.popUp{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin-left: 0%;
+      margin-right: 0%;
+      border-radius: 0%;
+      height: 100vh;
+      width: 75vw;
+      z-index: 100;
+      animation-duration: 0.55s;  /* Время работы анимации */
+      animation-fill-mode: both;  /* Поведение анимации */
+      animation-name: fadeInDown;/* Имя анимации */
+    } 
+    header nav ul a{
+      color: white;
+      margin-top: 10%;
+      z-index: 100;
+    }
+    
+    @keyframes fadeInDown { /* Сама анимация */
+      0% {                /* Старт анимации */
+          opacity: 0;
+          transform: translate3d(100%, 0px, 0px);
+      }
+      100% {              /* в финале анимации - финал это заданная 0.55s */
+          opacity: 1;
+          transform: none;
+      }
+    }
+
+
+  }
+
+
+
+
+  @media only screen and (max-width:768px){ /*-------ГОТОВО-------*/
+    .menuBtn{
+      margin-left: 80%;
+    }
+    .description .description-text{
+      width: 80%;
+      text-align: center;
+    }
+    .description .description-img img {
+      margin-top: 4%;
+    }
+  }
+
+
+
+  /* МОБИЛКА*/
+  @media only screen and (max-width:570px){  
+    .descrip .descrip-block{
+      margin-right: 0px;
+      align-items: center;
+      justify-content: center;
+    }
+    .menuBtn{
+      margin-left: 70%;
+    }
+    .info .info-time h2{
+      font-size: 17px;
+      margin-top: 3%;
+      margin-bottom: 5%;
+    }
+    .info .info-time{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .slider h2{
+      font-size: 20px;
+      padding-top: 15%;
+    }
+    .slider .slider-block1 h3{
+      font-size: 22px;
+      padding-top: 10%;
+    }
+    .slider .slider-block2 h3{
+      padding-top: 10%;
+      font-size: 20px;
+    }
+    .description{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .description .description-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .description .description-text p{
+      font-size: 16px;
+    }
+    .description .description-img img{
+      width: 100%;
+    }
+    .work .work-stage .work-stage__elem{
+      margin-top: 10%;
+    }
+    .descrip{
+      padding-top: 25%;
+    }
+    .descrip .descrip-block .descrip-text{
+      width: 100%;
+    }
+    .descrip .descrip-block .descrip-text p{
+        font-size: 25px;
+    }
+  }
+  @media only screen and (max-width:400px){
+    .form__wrapper{
+      width: 100%;
+    }
+   
+  }
+  @media only screen and (max-width:320px){
+    
+  }
+  
